@@ -8,3 +8,24 @@ I trained the model for 10200 steps and loss was under same level (0.3) constant
 The loss value during training can be seen in the graph below : 
 
 ![tensorboard](https://user-images.githubusercontent.com/74496005/149842236-8342ed81-90ba-41d1-9161-e2a0af44f2fb.JPG)
+
+---
+
+When I tested the model, I observed it didn't detect more than 100 cell. According to TensorFlow [website](https://www.tensorflow.org/lite/tutorials/model_maker_object_detection) TF Lite models have maximum 25 detections, TensorFlow model outputs maximum 100 detections.  Therefore I followed these steps :
+
+- I divide the test images into 2 equal parts (1500 x 750).
+- I applied the model on each half picture.
+- I saved the corner points of detection boxes into corresponding csv files.
+- Using these points, I circled the cells in each half image.
+- Finally, I combined these images and write the detected cell number in the upper left corner.
+
+An example image shows these steps : _(Top image is the original result produced by the model. Below image is the final result after processes.)_
+![example_of_steps (1)](https://user-images.githubusercontent.com/74496005/149845754-98a14730-93ae-4cad-a5a1-2739843cf1b4.jpg)
+
+---
+There is a  part in image testing code : 
+
+`min_score_thresh=.25`
+
+This value affects how many objects we can detect. The smaller this value, the more objects we can detect, but the higher the possibility of false detections.
+For example I used the same model with 0.20 and 0.25 threshold value and I obtained the following results : 
