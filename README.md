@@ -1,10 +1,3 @@
-Kesinlikle USAGE KISMI OLSUN
-Project Architecture - Kesinlikle olsun. Çünkü 1,....6 kısmını buraya yazacam.(Buraya diyagram da ekle kesnlikle)
-
-İlk başta gerekli dosyaları, drive'a kurmak için bir mkdir ile başlayan kod vardı, bunu bir python dosyasına yazayım. Setup diye ilk başta çalıştırayım
-Readme içerisinde, bundan bahsederim ayrıca. Usage kısmında
-
-
 # Cell Detection and Counting
 ## Description
 
