@@ -29,3 +29,15 @@ There is a  part in image testing code :
 
 This value affects how many objects we can detect. The smaller this value, the more objects we can detect, but the higher the possibility of false detections.
 For example I used the same model with 0.20 and 0.25 threshold value and I obtained the following results : 
+_(I also labeled test images with LabelImg tool. In this way I could find the real cell number )_
+
+|  IMAGE   | Real Cell Number | Detected Cell (0.25 Threshold)|Detected Cell (0.20 Threshold) | Accuracy(0.25)|Accuracy(0.20)|
+|----------|------------------| ------------------------------|----------------------------- |---------------|--------------|
+|Image_016 |  199|158|174|79%|87%|
+|Image_017 |  155|120|132|77%|85%|
+|Image_018 |  187|155|172|82%|92%|
+|Image_019 |  171|137|153|80%|89%|
+|Image_020 |  171|126|149|73%|87%|
+|Average||||45|50|
+
+
