@@ -41,8 +41,8 @@ _(I also labeled test images with LabelImg tool. In this way I could find the re
 |Image_019 |  171|137|153|80%|89%|
 |Image_020 |  171|126|149|73%|87%|
 |Average||||78%|88%|
-###### _All test images and their results can be seen **test_images_result** folder in this directory._
-###### _(NeurologIQ_Solution/ML_Model/test_images_result )_
+##### _All test images and their results can be seen **test_images_result** folder in this directory._
+##### _(NeurologIQ_Solution/ML_Model/test_images_result )_
 
 #
 
