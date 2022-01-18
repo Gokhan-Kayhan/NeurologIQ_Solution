@@ -8,7 +8,8 @@ This project basically consists of two parts :
 2-  Circle Drawing Around Cells and Counting
 
 Rectangular boxes are commanly used for object detection. But in this project after the detection process, additional part was added using OpenCV and Pandas libraries. In this way, the cells are detected with bounding circle and the number of detected cells are obtained.
-# 
+
+---
 
 ## Project Steps
 
@@ -34,7 +35,9 @@ Since I know the X and Y coordinates thanks to the corner points, I could calcul
 
 I draw circles for each cell according to the calculated center points using OpenCV library. I showed total detected cell number on top left corner. Thus, I got the final images as I wanted.
 
-#
+![detection_steps](https://user-images.githubusercontent.com/74496005/149877595-31feeeda-8966-441a-804a-40d081513a14.jpg)
+
+---
 
 ##  Installation and Usage
 
