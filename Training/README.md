@@ -11,6 +11,12 @@ The variables folder holds learned weights.
 
 The assets folder allow us  to add external files that may be needed.
 
+
+
+
+* These folders for my model can be seen under the : **/Training/my_model/saved_model/** 
+#### _(Since Assets folder is empty, it can not be loaded to Github)_
+
 #
 
 
