@@ -28,6 +28,8 @@ There is a  part in image testing code :
 `min_score_thresh=.25`
 
 This value affects how many objects we can detect. The smaller this value, the more objects we can detect, but the higher the possibility of false detections.
+
+
 For example I used the same model with 0.20 and 0.25 threshold value and I obtained the following results : 
 _(I also labeled test images with LabelImg tool. In this way I could find the real cell number )_
 
@@ -38,6 +40,12 @@ _(I also labeled test images with LabelImg tool. In this way I could find the re
 |Image_018 |  187|155|172|82%|92%|
 |Image_019 |  171|137|153|80%|89%|
 |Image_020 |  171|126|149|73%|87%|
-|Average||||45|50|
+|Average||||78%|88%|
+###### _All test images and their results can be seen **test_images_result** folder in this directory._
+###### _(NeurologIQ_Solution/ML_Model/test_images_result )_
+
+#
+
+At 0.20 threshold value, I observed that there is 1 false detected cell in each _Image_016, Image_018 and Image_019._ But with that threshold value, there is 10% increase in accuracy. Therefore I think that small false detection can be ignored. The most suitable threshold value is 0.20 in this case for the used model. 
 
 
