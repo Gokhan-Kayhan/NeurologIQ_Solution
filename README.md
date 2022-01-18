@@ -51,9 +51,13 @@ I draw circles for each cell according to the calculated center points using Ope
 
 * Add **_generate_tfrecord.py_** file into **_/TensorFlow/scripts/preprocessing_**
 
-* Copy **_/Colab_Documents/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8_** folder into **_TensorFlow/workspace/training_demo/pre-trained-models_**
+* Copy **_/Colab_Documents/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8_** folder into **_/TensorFlow/workspace/training_demo/pre-trained-models_**
 
-* Add **_pipeline.config_** file which was adjusted for cell dataset, into **_TensorFlow/workspace/training_demo/models/my_ssd_resnet50_v1_fpn_**
+* Add **_pipeline.config_** file which was adjusted for cell dataset, into **_/TensorFlow/workspace/training_demo/models/my_ssd_resnet50_v1_fpn_**
 
 
 * When all folders and files are set, the rest of the code blocks in the **Cell_Detection_and_Counting.ipynb** notebook can be executed.
+
+
+* When all codes are executed, final images(with boundary circle and number of detected cells) can be found in the folder : 
+**_/TensorFlow/deneme2/final_detected_counted_**
