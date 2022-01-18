@@ -34,3 +34,26 @@ Since I know the X and Y coordinates thanks to the corner points, I could calcul
 
 I draw circles for each cell according to the calculated center points using OpenCV library. I showed total detected cell number on top left corner. Thus, I got the final images as I wanted.
 
+#
+
+##  Installation and Usage
+
+* Project can be work completely in Google Colab. By executing the code blocks in the **Cell_Detection_and_Counting.ipynb** sequentially, model training and testing can be performed.
+* Just some adjustments need to be made on Google Drive. The files in the **_/Colab_Documents_** folder should be used for this.
+
+* Firstly, a folder named **_/TensorFlow_** should be created in Google Drive. Then put **_setup_folders.py_** into it. By executing `!python setup_folders.py` in Colab Notebook at Step 3 ; other necessary folders are created.
+
+* Copy the images and their XML files from **_/Colab_Documents/train/_** and paste into **_/TensorFlow/workspace/training_demo/images/train_**
+
+* Similarly, put any test images into **_/TensorFlow/workspace/training_demo/images/test**
+
+* Add **_label_map.pbtxt_** which was adjusted for cell dataset, into  **_/TensorFlow/workspace/training_demo/annotations_**
+
+* Add **_generate_tfrecord.py_** file into **_/TensorFlow/scripts/preprocessing_**
+
+* Copy **_/Colab_Documents/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8_** folder into **_TensorFlow/workspace/training_demo/pre-trained-models_**
+
+* Add **_pipeline.config_** file which was adjusted for cell dataset, into **_TensorFlow/workspace/training_demo/models/my_ssd_resnet50_v1_fpn_**
+
+
+* When all folders and files are set, the rest of the code blocks in the **Cell_Detection_and_Counting.ipynb** notebook can be executed.
